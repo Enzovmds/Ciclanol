@@ -202,7 +202,7 @@ _____________________________________*/
     width: 150vh;
 }
 
-#form {
+#body-form #form {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -210,7 +210,7 @@ _____________________________________*/
     background: linear-gradient(90deg, rgba(110,230,55,1) 2%, rgba(118,233,98,1) 10%, rgba(128,236,154,1) 15%, rgba(144,241,239,1) 25%, rgba(144,241,239,1) 100%);
 }
 
-#form form {
+#body-form #form form {
     background: rgba(255,255,255,0.9);
     box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
     border-radius: 5px;

@@ -58,7 +58,7 @@ div.dropdown-menu.show {
 /* Formatação Capa
 _____________________________________*/
 #home {
-    background: url(../imagens/capa.png) no-repeat;
+    background: url(capa.png) no-repeat;
     background-attachment: fixed;
 }
 

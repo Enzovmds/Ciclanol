@@ -1,0 +1,637 @@
+/* Layout
+_____________________________________*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300;500;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
+}
+
+html, body, #home, #form {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Formatação da Barra de navegação
+_____________________________________*/
+header {
+    padding: 20px 0px;
+    font-size: 1.2em;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+header a {
+    color: black;
+    margin: 0px 3px;
+}
+
+.nav-cor a:hover {
+    color: #6ee637;
+    transition: all 0.4s;
+}
+
+li.nav-item.dropdown a:hover {
+    color: #6ee637;
+    transition: all 0.4s;
+}
+
+div.dropdown-menu.show {
+    border: none;
+    border-radius: 0px;
+}
+
+#dropdown a {
+    display: inline;
+    line-height: 40px;
+}
+
+#dropdown a:hover {
+    background: #17a2b8;
+    color: white;
+    transition: background 0.5s, color 0.4s;
+    transition-timing-function: linear;
+    border-radius: 2px;
+}
+
+/* Formatação Capa
+_____________________________________*/
+#home {
+    background: url(../imagens/capa.png) no-repeat;
+    background-attachment: fixed;
+}
+
+.capa {
+    text-align: center;
+}
+
+.btn-custom {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    letter-spacing: -0.04em;
+    font-weight: bold;
+}
+
+.teste-lead {
+    margin: 0 auto;
+}
+
+/* Formatação Biodiesel
+_____________________________________*/
+#biodiesel {
+    background: #90F1EF;
+    padding: 60px 0px;
+}
+
+#biodiesel img {
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1); 
+}
+
+
+#menu-biodiesel {
+    padding-top: 40px;
+}
+
+div.col-4 {
+    padding: 20px 10px;
+    transition: all .4s ease 0s;
+}
+
+div.col-4:hover {
+    background: rgba(211, 211, 211, 0.1);
+    padding: 30px 30px;
+}
+
+#biodiesel div.col-md-12.col-lg-6.col-sm-12.col-xl-6 {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Formatação Menu-Sobre
+_____________________________________*/
+#menu-biodiesel {
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 30%, rgba(212,250,249,1) 40%, rgba(183,246,245,1) 70%, rgba(144,241,239,1) 100%);
+}
+
+#menu-biodiesel h3 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: rgb(51, 51, 51);
+    letter-spacing: -0.05em;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.3);
+    padding: 0px 0px 20px 0px;
+    border-radius: 1.9px;
+}
+
+#menu-biodiesel img {
+    border-radius: 2px;
+}
+
+#menu-biodiesel img.img-fluid {
+    transition: all .4s ease;
+}
+
+#menu-biodiesel img.img-fluid:hover {
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* Formatação Sobre
+_____________________________________*/
+#sobre {
+    padding: 40px;
+}
+
+#sobre h2 {
+    font-size: 2em;
+}
+
+/* Formatação Rodapé
+_____________________________________*/
+#rodape {
+    background: #90F1EF;
+    padding-top: 80px;
+}
+
+#rodape ul li a {
+    color: rgba(51, 51, 51, 0.7);
+    padding-left: 15px;
+    transition: background 0.7s, color 0.6s ease;
+}
+
+#rodape ul li a:hover {
+    background: white;
+    border-radius: 2px;
+    color: black;
+}
+
+/* Pagina de formulário
+_____________________________________*/
+#body-form, #body-cadastro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(120deg, rgba(2,0,36,1) 0%, rgba(28,93,128,1) 30%, rgba(22,117,153,1) 50%, rgba(12,161,200,1) 70%, rgba(0,212,255,1) 100%);
+}
+
+#form-container {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+}
+
+#form-image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6ee637;
+}
+
+#form-image img {
+    width: 150vh;
+}
+
+#form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(110,230,55,1) 2%, rgba(118,233,98,1) 10%, rgba(128,236,154,1) 15%, rgba(144,241,239,1) 25%, rgba(144,241,239,1) 100%);
+}
+
+#form form {
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 30em;
+    height: 30em;
+    padding: 30px 40px 0px 40px;
+}
+
+.form-header {
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-header img {
+    width: 350px;
+    margin: 0 auto;
+    margin-bottom: 1.4em;
+}
+
+.form-header h1 {
+    font-size: 2em;
+}
+
+.title {
+    height: 50px;
+    margin-bottom: .4em;
+    margin-top: 1em;
+}
+
+.form-header h1::after {
+    content: "";
+    display: block;
+    width: 5rem;
+    height: 0.3rem;
+    background: #17a2b8;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.form-body input {
+    height: 50px;
+}
+
+#body-form h3 {
+    font-size: 1em;
+}
+
+span.input-group-text {
+    background: #90F1EF;
+}
+
+/* Pagina de Cadastro
+_____________________________________*/
+#body-cadastro .form-header h1 {
+    font-size: 1.3em;
+}
+
+#body-cadastro input {
+    height: 40px;
+}
+
+#body-cadastro #form-image img {
+    width: 60em;
+}
+
+#body-cadastro .title {
+    margin-bottom: 0px;
+    margin-top: 1px;
+}
+
+#body-cadastro .form-header img{
+    width: 300px;
+}
+
+#body-cadastro #form form {
+   height: 40em;
+}
+
+#body-cadastro h3 {
+    font-size: 1em;
+}
+
+#body-cadastro #form form {
+    height: 90%;
+}
+
+/* Página Sobre
+_____________________________________*/
+#metas .flex-row {
+    display: flex;
+}
+
+.number {
+    border: 5px solid red;
+    text-align: center;
+    line-height: 6em;
+    width: 6em;
+    font-size: 2em;
+    height: 6em;
+    border-radius: 100px;
+    display: block;
+}
+
+
+/* Tipografia
+_____________________________________*/
+
+h1 {
+    font-size: 2.6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+    color: rgb(51, 51, 51);
+}
+
+h2 {
+    border-radius: 1px;
+    font-weight: bold;
+    font-size: 2.5em;
+    padding: 10px 0px 8px 0px;
+    border-bottom: 3px solid rgba(51, 51,51, 0.1);
+}
+
+p {
+    font-size: 1.1em;
+    text-align: justify;
+}
+
+h3 {
+    font-size: 0.9em;
+    color: rgb(51, 51, 51);
+    text-align: center;
+    margin: 30px 0px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: rgb(51, 51, 51);
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.4);
+}
+
+
+
+/* Media Queries
+_____________________________________*/
+
+/* Extra Small Devices */
+@media (max-width: 575.98px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    #home a.btn {
+        font-size: 1.2em;
+    }
+
+    a.nav-link.btn {
+        margin-top: 10px;
+    }
+
+    #dropdown a {
+        display: block;
+    }
+
+    #sobre img.img-fluid.d-md-none.d-lg-block.d-xl-block.d-sm-none {
+        display: none;
+    }
+
+    #biodiesel img.img-fluid {
+        display: none;
+    }
+
+    #biodiesel div.col-md-12.col-lg-6.col-sm-12.col-xl-6 {
+        margin: 0px 15px;
+    }
+
+    #menu-biodiesel img {
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+
+    #rodape h4 {
+        margin-top: 20px;
+    }
+
+    #form-image img {
+        display: none;
+    }
+
+    #form-image {
+        width: 0;
+    }
+
+    #form {
+        width: 100%;
+        background: none;
+    }
+
+    #form-container {
+        background: none;
+        box-shadow: none;
+    }
+
+    
+    #body-cadastro #form {
+        width: 90%;
+        height: 90vh;
+    }
+
+}
+/*_____________________________________________________________*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    a.nav-link.btn {
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    #home a.btn {
+        font-size: 1.2em;
+    }
+
+    #menu-biodiesel img {
+        margin-left: 50px;
+    }
+
+    #form-image img {
+        display: none;
+    }
+
+    #form-image {
+        width: 0;
+    }
+
+    #form {
+        width: 100%;
+        background: none;
+    }
+
+    #form-container {
+        background: none;
+        box-shadow: none;
+    }
+
+    
+    #body-cadastro #form {
+        width: 90%;
+        height: 90vh;
+    }
+
+ }
+
+/* Small Devices - Max Width*/
+@media (max-width: 767.98px) {
+    #dropdown a {
+        display: block;
+    }
+
+}
+/*_____________________________________________________________*/
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    a.nav-link.btn {
+        margin-top: 10px;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #menu-biodiesel img {
+        margin-left: 0px;
+    }
+
+    #form-image img {
+        display: none;
+    }
+
+    #form-image {
+        width: 0;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    
+    #body-cadastro #form {
+        width: 90%;
+        height: 90vh;
+    }
+
+ }
+
+/* Medium devices - Max Width */
+ @media (max-width: 991.98px) {
+    #dropdown a {
+        display: block;
+    }
+
+ }
+/*_____________________________________________________________*/
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    a.nav-link.btn {
+        margin-top: 0px;
+    }
+
+    #dropdown {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 12px 0px ;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        font-size: 3.1em;
+    }
+
+    #form-image {
+        width: 0px;
+    }
+
+    #form-image img {
+        display: none;
+    }
+
+    #form {
+        width: 100%;
+    }
+
+    #body-cadastro #form {
+        width: 90%;
+        height: 90vh;
+    }
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    a.nav-link.btn {
+        margin-top: 0px;
+    }
+
+    #dropdown {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 12px 0px ;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    h1 {
+        font-size: 3.8em;
+    }
+
+    #form-image img {
+        display: flex;
+    }
+
+    #form {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(90deg, rgba(110,230,55,1) 2%, rgba(118,233,98,1) 10%, rgba(128,236,154,1) 15%, rgba(144,241,239,1) 25%, rgba(144,241,239,1) 100%);
+    }
+
+    #form form {
+        background: rgba(255,255,255,0.9);
+        box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        width: 30em;
+        height: 70vh;
+        padding: 30px 40px 0px 40px;
+    }
+
+    #form-container {
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    #form-image {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #6ee637;
+    }
+
+    #form-container {
+        width: 80%;
+        height: 80vh;
+        display: flex;
+        box-shadow: 0px 0px 10px 5px rgba(255, 255, 255, 0.2);
+    }
+
+    #body-cadastro #form-container {
+        width: 90%;
+        height: 90vh;
+    }
+
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+    a.nav-link.btn {
+        margin-top: 0px;
+    }
+
+    #dropdown {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0px 0px 12px 0px ;
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    }
+
+ }

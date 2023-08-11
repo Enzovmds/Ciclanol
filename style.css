@@ -267,11 +267,11 @@ span.input-group-text {
 /* Pagina de Cadastro
 _____________________________________*/
 #body-cadastro .form-header h1 {
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 #body-cadastro input {
-    height: 40px;
+    height: 45px;
 }
 
 #body-cadastro #form-image img {
@@ -296,7 +296,7 @@ _____________________________________*/
 }
 
 #body-cadastro #form form {
-    height: 90%;
+    height: 65%;
 }
 
 /* Página Sobre
@@ -421,8 +421,8 @@ _____________________________________*/
 
     
     #body-cadastro #form {
-        width: 90%;
-        height: 90vh;
+        width: 30em;
+        height: 35em;
     }
 
 }

@@ -133,6 +133,10 @@ _____________________________________*/
     border-radius: 2px;
 }
 
+#menu-biodiesel .row {
+    width: 100%;
+}
+
 #menu-biodiesel img.img-fluid {
     transition: all .4s ease;
 }
@@ -389,7 +393,10 @@ _____________________________________*/
 
     #menu-biodiesel img {
         margin-bottom: 20px;
-        margin-left: 50px;
+    }
+
+    #menu-biodiesel .row {
+        margin: 0 auto;
     }
 
     #rodape h4 {
